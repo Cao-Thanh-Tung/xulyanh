@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven{
+            url = uri("https://maven.pkg.github.com/iappa01/before-and-after-view")
+            credentials {
+                username = "caothanhtung08082002"
+                password = "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"
+            }
+        }
+    }
+}
+rootProject.name = "xulyanh"
+include ':app'
